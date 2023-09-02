@@ -1,34 +1,41 @@
-const movies = [
+const dogs = [
     {
-        name: "Titanic",
-        year: 1997,
+      breed: "golden retriever",
+      age: 7,
     },
     {
-        name: "1+1 intouchables",
-        year: 2011,
+      breed: "labrador retriever",
+      age: 4,
     },
     {
-        name: "Schindler's list",
-        year: 1993,
+      breed: "french bulldog",
+      age: 12,
     },
     {
-        name: "Hachi: A dog's Tale",
-        year: 2009,
+      breed: "beagle",
+      age: 6,
     },
     {
-        name: "Brest Fortress",
-        year: 2010,
+      breed: "german shepherd dog",
+      age: 2,
     },
-    
+    {
+      breed: "poodle",
+      age: 3,
+    },
+    {
+      breed: "bulldog",
+      age: 4,
+    },
 ];
 
-for (let i = 0; i < movies.length; i++){
-    const {name, year} = movies[i];
+for (let i = 0; i < dogs.length; i++){
+    const {breed, age} = dogs[i];
 
 
 const div = document.createElement("div");
 const row = document.createElement("p");
-row.innerText = "movie title:  " + name +  " premiere date:  "+ year;
+row.innerText = breed + " age is "+ age;
 div.append(row);
 document.querySelector("body").append(div)
 }
